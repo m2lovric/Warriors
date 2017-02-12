@@ -102,12 +102,12 @@ namespace fight_game
                         Console.WriteLine($"Player health : {player_health}");
                         Console.WriteLine($"Opponent health : {opp_health}");
                     }
-                    if (player_health == 0)
+                    if (player_health <= 0)
                     {
                         Console.WriteLine("OPPONENT WIN.");
                         break;
                     }
-                    else if (opp_health == 0)
+                    else if (opp_health <= 0)
                     {
                         Console.WriteLine("PLAYER WIN.");
                         break;
